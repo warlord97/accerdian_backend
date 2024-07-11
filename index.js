@@ -1,8 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+const job = require("./cron/cron");
 
 const referralRoute = require("./routes/referralRoute");
 require("dotenv").config();
+
+job.start();
 
 const app = express();
 app.use(express.json());
