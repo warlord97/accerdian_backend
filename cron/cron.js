@@ -1,7 +1,7 @@
 const cron = require("cron");
 const https = require("https");
 
-const URL = "http://localhost:5173";
+const URL = "https://accredian-frontend-blond.vercel.app";
 
 const job = new cron.CronJob("*/14 * * * *", function () {
   https
