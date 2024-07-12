@@ -1,7 +1,7 @@
 const cron = require("cron");
 const https = require("https");
 
-const URL = "https://accredian-frontend-blond.vercel.app";
+const URL = "https://accerdian-backend-o2qi.onrender.com/api/referrals";
 
 const job = new cron.CronJob("*/14 * * * *", function () {
   https
